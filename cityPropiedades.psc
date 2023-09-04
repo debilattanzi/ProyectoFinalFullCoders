@@ -1,6 +1,7 @@
 
 Funcion alquiler <- TipoOperacionAlquiler
 	Repetir
+		Escribir "Selecciones la opcion desada:"
 		Escribir "Para ALQUILER ingrese: 1"
 		Escribir "Para VENTAS ingrese: 2"
 		Leer valorIngresado
@@ -10,9 +11,12 @@ Fin Funcion
 
 
 Funcion casa <- AlquilerCasa
-	Escribir "Para CASAS ingrese: 1"
-	Escribir "Para DEPARTAMENTOS ingrese: 2"
-	Leer valorIngresado
+	Repetir
+		Escribir "Usted a seleccionado la opcion Alquiler"
+		Escribir "Para CASAS ingrese: 1"
+		Escribir "Para DEPARTAMENTOS ingrese: 2"
+		Leer valorIngresado
+	Hasta Que valorIngresado = 1 O valorIngresado = 2
 	casa <- valorIngresado = 1
 Fin Funcion
 
@@ -45,8 +49,6 @@ Algoritmo alquilerPropiedades
 	propietarioDepto3 <- " Maria Suarez; CEL: (358)15149875."
 	
 	Si TipoOperacionAlquiler
-		Escribir "Usted a seleccionado la opcion Alquiler"
-		
 		Si AlquilerCasa
 			Mostrar casa1
 			Mostrar precioCasa1, separador
