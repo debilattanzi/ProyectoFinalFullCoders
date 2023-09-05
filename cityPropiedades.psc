@@ -5,7 +5,7 @@ Funcion alquiler <- TipoOperacionAlquiler
 		Escribir "Para ALQUILER ingrese: 1"
 		Escribir "Para VENTAS ingrese: 2"
 		Leer valorIngresado
-	Hasta Que (valorIngresado == 1 O valorIngresado == 2)
+	Hasta Que (valorIngresado = 1 O valorIngresado = 2)
 	alquiler <- valorIngresado = 1
 Fin Funcion
 
@@ -16,7 +16,7 @@ Funcion casa <- AlquilerCasa
 		Escribir "Para CASAS ingrese: 1"
 		Escribir "Para DEPARTAMENTOS ingrese: 2"
 		Leer valorIngresado
-	Hasta Que valorIngresado = 1 O valorIngresado = 2
+	Hasta Que (valorIngresado = 1 O valorIngresado = 2)
 	casa <- valorIngresado = 1
 Fin Funcion
 
@@ -69,8 +69,8 @@ Algoritmo alquilerPropiedades
 			Leer quiereAlquilar
 			
 			SI quiereAlquilar = 1 Entonces 
-				Escribir "Ingrese 1: para CASA de 1 dormitorio, " 
-				Escribir "Ingrese 2: para CASA de 2 dormitorios, "
+				Escribir "Ingrese 1: para CASA de 1 dormitorio " 
+				Escribir "Ingrese 2: para CASA de 2 dormitorios "
 				Escribir "Ingrese 3: para CASA de 3 dormitorios"
 				Leer valorIngresado
 				
@@ -82,7 +82,7 @@ Algoritmo alquilerPropiedades
 					3:
 						Mostrar "Ha seleccionado una gran opcion, le brindamos los datos del propietario: ", propietarioCasa3
 					De Otro Modo:
-						Mostrar "El valor ingresado ", valorIngresado, "es incorrecto" 
+						Mostrar "El valor ingresado ", valorIngresado, " es incorrecto." 
 				Fin Segun
 			SiNo
 				Mostrar "Gracias por su visita"
@@ -102,8 +102,8 @@ Algoritmo alquilerPropiedades
 			Leer quiereAlquilar
 			
 			SI quiereAlquilar = 1 Entonces
-				Escribir "Ingrese 1: para DEPARTAMENTO de 1 dormitorio, " 
-				Escribir "Ingrese 2: para DEPARTAMENTO de 2 dormitorios, "
+				Escribir "Ingrese 1: para DEPARTAMENTO de 1 dormitorio" 
+				Escribir "Ingrese 2: para DEPARTAMENTO de 2 dormitorios"
 				Escribir "Ingrese 3: para DEPARTAMENTO de 3 dormitorios"
 				Leer valorIngresado
 				
@@ -115,7 +115,7 @@ Algoritmo alquilerPropiedades
 					3:
 						Mostrar "Ha seleccionado una gran opcion, le brindamos los datos del propietario: ", propietarioDepto3
 					De Otro Modo:
-						Mostrar "El valor ingresado ", valorIngresado, "es incorrecto" 
+						Mostrar "El valor ingresado ", valorIngresado, " es incorrecto" 
 				Fin Segun
 			SiNo
 				Mostrar "Gracias por su visita"
@@ -127,3 +127,5 @@ Algoritmo alquilerPropiedades
 	FinSi
 	
 FinAlgoritmo
+
+
