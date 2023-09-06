@@ -12,6 +12,7 @@ La aplicacion deberá cumplir con los siguientes requisitos funcionales:
 * Brindar contacto fehaciente para terminar la operatoria: informa los datos de contacto del dueño de la propiedad seleccionada para proceder a concretar la operación.
 
 ### Metodologías Agiles
+Acceso: https://github.com/users/debilattanzi/projects/1
 1. Metodología Kanban: se utiliza esta metodologia para definir, asignar y darle un seguimiento a las tareas.
   Se utilizó un tablero Kanban en la sección de Proyects de este repositorio en el cual se crearon cuatro columnas:
     * Backlog: se incormararon la totalidad de la lista de tareas:
